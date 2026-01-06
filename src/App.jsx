@@ -2,6 +2,7 @@ import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
 import WhyUs from './components/WhyUs/WhyUs';
 import Pricing from './components/Pricing/Pricing';
+import GoogleBusiness from './components/GoogleBusiness/GoogleBusiness';
 import Testimonials from './components/Testimonials/Testimonials';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
@@ -21,6 +22,7 @@ function App() {
                 <Hero />
                 <WhyUs />
                 <Pricing packages={packagesData} />
+                <GoogleBusiness />
                 <Testimonials />
                 <Contact info={contactInfo} />
             </main>
