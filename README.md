@@ -32,9 +32,12 @@ El diseño sigue una estética **Dark Mode con acentos Neón** (Cyan, Magenta, V
 
 ```bash
 src/
+├── 📂 assets/          # Imágenes e iconos optimizados
 ├── 📂 components/      # Arquitectura basada en componentes
 │   ├── 📂 Contact
+│   ├── 📂 FloatingWhatsApp
 │   ├── 📂 Footer
+│   ├── 📂 GoogleBusiness
 │   ├── 📂 Header
 │   ├── 📂 Hero
 │   ├── 📂 Pricing
@@ -43,13 +46,14 @@ src/
 ├── 📂 data/            # Configuración externa de textos y precios
 ├── 📂 hooks/           # Lógica reutilizable
 └── 📄 App.jsx          # Estructura principal
+public/                 # Archivos estáticos sin procesar (favicon, robots...)
 ```
 
 ---
 
 ## 🔗 Visitar Sitio
 Puedes ver el proyecto en funcionamiento aquí:
-👉 **[Enlace al sitio web próximamente...]**
+👉 **[sozasystems.netlify.app](https://sozasystems.netlify.app/)**
 
 ---
 

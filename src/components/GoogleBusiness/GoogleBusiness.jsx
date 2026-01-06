@@ -1,11 +1,12 @@
 import './GoogleBusiness.css';
+import googleMapsImg from '../../assets/google-maps.png';
 
 const GoogleBusiness = () => {
     return (
         <section className="google-business fade-in-section">
             <div className="google-business-container">
                 <div className="gb-content">
-                    <span className="gb-label">Bonus Exclusivo - Incluido en Todos los Planes</span>
+                    <span className="gb-label">Bonus Exclusivo - Incluido en Todos los Paquetes</span>
                     <h2 className="gb-title">
                         Potencia tu Presencia <br />
                         <span className="text-gradient">Local en Google</span>
@@ -14,7 +15,7 @@ const GoogleBusiness = () => {
                     {/* Imagen SOLO para móvil */}
                     <div className="gb-image-wrapper mobile-only">
                         <img
-                            src="/google-maps.png"
+                            src={googleMapsImg}
                             alt="Google Maps en celular"
                             className="gb-image"
                         />
@@ -44,7 +45,7 @@ const GoogleBusiness = () => {
                 {/* Imagen SOLO para escritorio */}
                 <div className="gb-image-wrapper desktop-only">
                     <img
-                        src="/google-maps.png"
+                        src={googleMapsImg}
                         alt="Google Maps y Perfil de Negocio"
                         className="gb-image"
                     />
