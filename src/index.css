@@ -1,0 +1,96 @@
+:root {
+    /* Paleta NeonForge */
+    --color-bg: #030305;
+    /* Negro casi absoluto */
+    --color-surface: #0f1014;
+    /* Gris muy oscuro para tarjetas */
+
+    --color-neon-primary: #00f3ff;
+    /* Cyan Eléctrico */
+    --color-neon-secondary: #bc13fe;
+    /* Morado/Magenta Neón */
+    --color-neon-accent: #39ff14;
+    /* Verde Hacker */
+
+    --color-text-main: #ffffff;
+    --color-text-muted: #94a3b8;
+
+    --font-main: 'Inter', system-ui, sans-serif;
+    --font-display: 'Orbitron', 'Inter', sans-serif;
+    /* Futuro */
+
+    /* Efectos */
+    --glow-primary: 0 0 10px rgba(0, 243, 255, 0.5), 0 0 20px rgba(0, 243, 255, 0.3);
+    --glow-secondary: 0 0 10px rgba(188, 19, 254, 0.5);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--color-bg);
+    color: var(--color-text-main);
+    font-family: var(--font-main);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--font-display, var(--font-main));
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Scrollbar personalizada */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-bg);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-neon-primary);
+    border-radius: 4px;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Utilidad de texto gradiente */
+.text-gradient {
+    background: linear-gradient(90deg, var(--color-neon-primary), var(--color-neon-secondary));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* Animaciones Scroll Reveal */
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    will-change: opacity, transform;
+}
+
+.fade-in-section.is-visible {
+    opacity: 1;
+    transform: none;
+}

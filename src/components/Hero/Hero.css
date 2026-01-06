@@ -1,0 +1,107 @@
+.hero {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    padding-top: 4rem;
+    /* Compensar header sticky */
+}
+
+.hero__container {
+    text-align: center;
+    z-index: 2;
+    position: relative;
+}
+
+.hero__title {
+    font-size: 3.5rem;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    animation: fadeIn 1s ease-out;
+}
+
+.hero__subtitle {
+    font-size: 1.25rem;
+    color: var(--color-text-muted);
+    max-width: 600px;
+    margin: 0 auto 2.5rem;
+    animation: fadeIn 1s ease-out 0.3s backwards;
+}
+
+.hero__actions {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    animation: fadeIn 1s ease-out 0.6s backwards;
+}
+
+/* Botones Neon */
+.btn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.btn--primary {
+    background-color: transparent;
+    border: 1px solid var(--color-neon-primary);
+    color: var(--color-neon-primary);
+    box-shadow: 0 0 10px rgba(0, 243, 255, 0.1);
+}
+
+.btn--primary:hover {
+    background-color: var(--color-neon-primary);
+    color: #000;
+    box-shadow: 0 0 20px var(--color-neon-primary);
+}
+
+.btn--secondary {
+    border: 1px solid var(--color-text-muted);
+    color: var(--color-text-muted);
+}
+
+.btn--secondary:hover {
+    border-color: #fff;
+    color: #fff;
+}
+
+/* Glow Background effect */
+.hero__glow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60vw;
+    height: 60vw;
+    background: radial-gradient(circle, rgba(188, 19, 254, 0.15) 0%, rgba(0, 0, 0, 0) 70%);
+    z-index: 1;
+    pointer-events: none;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero__title {
+        font-size: 2.5rem;
+    }
+}

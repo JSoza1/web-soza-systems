@@ -1,0 +1,80 @@
+.contact {
+    padding: 5rem 0;
+}
+
+.contact__grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.contact-card {
+    background-color: var(--color-surface);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.contact-card:hover {
+    background-color: rgba(255, 255, 255, 0.03);
+    border-color: var(--color-neon-accent);
+    transform: translateY(-5px);
+}
+
+.contact-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.contact-card h3 {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact-card p {
+    color: var(--color-text-muted);
+    margin-bottom: 1.5rem;
+}
+
+.contact-link {
+    color: var(--color-neon-accent);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+.contact-card--whatsapp .contact-icon {
+    color: #25D366;
+}
+
+.contact-card--whatsapp:hover {
+    border-color: #25D366;
+    box-shadow: 0 0 15px rgba(37, 211, 102, 0.2);
+}
+
+.contact-card--whatsapp .contact-link {
+    color: #25D366;
+}
+
+/* Estilos para Email (Cyan/Azul Neón) */
+.contact-card--email .contact-icon {
+    color: #00E0FF;
+}
+
+.contact-card--email:hover {
+    border-color: #00E0FF;
+    box-shadow: 0 0 15px rgba(0, 224, 255, 0.2);
+}
+
+.contact-card--email .contact-link {
+    color: #00E0FF;
+}

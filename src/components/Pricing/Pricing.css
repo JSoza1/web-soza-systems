@@ -1,0 +1,133 @@
+.pricing {
+    padding: 5rem 0;
+    position: relative;
+    background-image: radial-gradient(circle at 10% 10%, rgba(0, 243, 255, 0.03) 0%, transparent 40%);
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.section-header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.section-header p {
+    color: var(--color-text-muted);
+}
+
+.pricing__grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    align-items: stretch;
+    /* Para que todas tengan la misma altura */
+}
+
+.pricing-card {
+    background-color: var(--color-surface);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 2.5rem;
+    flex: 1 1 300px;
+    max-width: 380px;
+    position: relative;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.pricing-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--color-neon-primary);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Tarjeta destacada (Plasma) */
+.pricing-card--featured {
+    border-color: var(--color-neon-secondary);
+    box-shadow: 0 0 20px rgba(188, 19, 254, 0.15);
+    transform: scale(1.05);
+    /* Ligeramente más grande */
+    z-index: 10;
+}
+
+.pricing-card--featured:hover {
+    transform: scale(1.05) translateY(-5px);
+    box-shadow: 0 0 30px rgba(188, 19, 254, 0.3);
+}
+
+.pricing-card__title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #fff;
+    letter-spacing: 3px;
+}
+
+.pricing-card__price {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #fff;
+    font-family: var(--font-display);
+}
+
+.pricing-card--featured .pricing-card__price {
+    color: var(--color-neon-secondary);
+    text-shadow: 0 0 10px rgba(188, 19, 254, 0.5);
+}
+
+.currency {
+    font-size: 1.5rem;
+    vertical-align: top;
+    opacity: 0.7;
+}
+
+.pricing-card__desc {
+    color: var(--color-text-muted);
+    margin-bottom: 2rem;
+    font-size: 0.95rem;
+}
+
+.pricing-card__features {
+    list-style: none;
+    margin-bottom: 2.5rem;
+    flex-grow: 1;
+    /* Empuja el botón hacia abajo */
+}
+
+.pricing-card__features li {
+    margin-bottom: 0.8rem;
+    color: #e2e8f0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.check-icon {
+    color: var(--color-neon-accent);
+    font-weight: bold;
+}
+
+.btn--full {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: auto;
+}
+
+/* Ajuste responsive para la tarjeta destacada */
+@media (max-width: 1024px) {
+    .pricing-card--featured {
+        transform: none;
+        /* Quitamos escalado en tablet/móvil para evitar desbordes */
+    }
+
+    .pricing-card--featured:hover {
+        transform: translateY(-5px);
+    }
+}
