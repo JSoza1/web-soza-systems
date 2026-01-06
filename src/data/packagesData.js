@@ -8,10 +8,11 @@ export const packagesData = [
             "Landing Page (1 sola página)",
             "Diseño Responsivo (Móvil/PC)",
             "Botón de WhatsApp",
-            "Hosting gratis (con limite de uso generoso)",
             "Enlace a Redes Sociales",
+            "Hosting gratis",
             "Sin costo de mantenimiento",
-            "Entrega en 48hs"
+            "Sin costo de renovación anual",
+            "Entrega en 72hs"
         ],
         highlight: false
     },
@@ -24,11 +25,11 @@ export const packagesData = [
             "Sitio Web de 3 Paginas EJ: (Inicio, Servicios, Contacto)",
             "Diseño Responsivo (Móvil/PC)",
             "Botón de WhatsApp",
-            "Hosting gratis (con limite de uso generoso)",
-            "Dominio profesional",
             "Formulario de Contacto Avanzado",
             "Enlace a Redes Sociales",
             "Optimización SEO",
+            "Hosting gratis",
+            "Dominio profesional",
             "Sin costo de mantenimiento",
             "Entrega en 5 días"
         ],
@@ -46,9 +47,10 @@ export const packagesData = [
             "Gestión de Pedidos y Clientes",
             "Diseño Responsivo (Móvil/PC)",
             "Botón de WhatsApp",
-            "Hosting y Dominio profesional por un año",
             "Enlace a Redes Sociales",
             "Optimización SEO",
+            "Hosting pago",
+            "Dominio profesional",
             "Entrega dependiendo de la complejidad"
         ],
         highlight: false

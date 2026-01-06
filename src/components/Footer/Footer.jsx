@@ -7,7 +7,7 @@ const Footer = () => {
                 <p>&copy; {new Date().getFullYear()} <span className="logo-neon">Soza</span> Systems. Todos los derechos reservados.</p>
                 <div className="footer__links">
                     <a href="#hero">Inicio</a>
-                    <a href="#pricing">Planes</a>
+                    <a href="#pricing">Paquetes</a>
                 </div>
             </div>
         </footer>
