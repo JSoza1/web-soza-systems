@@ -24,6 +24,12 @@
     --glow-secondary: 0 0 10px rgba(188, 19, 254, 0.5);
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+    /* Ajusta este valor al alto de tu Header (aprox 70-80px) */
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
