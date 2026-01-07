@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <footer className="footer">
             <div className="container footer__container">
-                <p>&copy; {new Date().getFullYear()} <span className="logo-neon">Soza</span> Systems. Todos los derechos reservados.</p>
+                <p>&copy; {new Date().getFullYear()} <span className="logo-neon">Soza</span> <span className="text-white">Systems</span>. Todos los derechos reservados.</p>
                 <div className="footer__links">
                     <a href="#hero">Inicio</a>
                     <a href="#pricing">Paquetes</a>

@@ -28,6 +28,12 @@
     color: var(--color-neon-primary);
 }
 
+.text-white {
+    color: #ffffff;
+    font-weight: bold;
+    /* Opcional: para que resalte más como parte del logo */
+}
+
 @media (max-width: 640px) {
     .footer__container {
         flex-direction: column;
