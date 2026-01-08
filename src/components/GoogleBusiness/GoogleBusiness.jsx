@@ -22,8 +22,7 @@ const GoogleBusiness = () => {
                     </div>
 
                     <p className="gb-description">
-                        No basta con tener una web increíble si tus clientes locales no te encuentran.
-                        Nos encargamos de poner tu negocio en el mapa.
+                        Configuramos tu perfil de Google Business para conectar con clientes locales. Lo dejamos todo listo para que tú solo realices la verificación final.
                     </p>
 
                     <ul className="gb-features">
