@@ -131,3 +131,21 @@
         transform: translateY(-5px);
     }
 }
+
+@media (max-width: 768px) {
+    .pricing .section-header h2 {
+        font-size: 1.8rem !important;
+    }
+
+    .pricing-card__price {
+        font-size: 2.5rem;
+        /* Reduced from 3.5rem */
+    }
+
+    .btn--full {
+        font-size: 0.9rem;
+        /* Slightly smaller button text */
+        padding: 0.8rem 1.5rem;
+        /* Adjust padding if needed */
+    }
+}

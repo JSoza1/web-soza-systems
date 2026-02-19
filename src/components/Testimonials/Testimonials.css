@@ -5,6 +5,10 @@
 }
 
 .testimonials .text-secondary-gradient {
+    /* Keep existing secondary gradient if it was intentional, or switch to standard if preferred. 
+       For now, assuming user wants consistency in SIZE primarily, but maybe color too?
+       The user said "le falta color" for the previous one. This one HAS color.
+       I will keep this specific gradient as it adds variety, but if user complains I'll change it. */
     background: linear-gradient(to right, var(--color-neon-secondary), #ff00ff);
     -webkit-background-clip: text;
     background-clip: text;
@@ -46,22 +50,25 @@
     align-items: center;
     justify-content: center;
     font-size: 1.5rem;
-    border: 2px solid var(--secondary-color);
+    border: 2px solid var(--color-neon-secondary);
+    /* Fixed variable name from secondary-color to color-neon-secondary if standard, but let's check index.css. Index has --color-neon-secondary. The file had var(--secondary-color) which might be undefined? */
 }
 
 .testimonial-header h4 {
-    color: var(--text-color);
+    color: var(--color-text-main);
+    /* Fixed from text-color */
     font-size: 1.1rem;
     margin: 0;
 }
 
 .testimonial-role {
     font-size: 0.85rem;
-    color: var(--text-muted);
+    color: var(--color-text-muted);
+    /* Fixed from text-muted */
 }
 
 .testimonial-text {
-    color: #ccc;
+    color: max(var(--color-text-muted), #ccc);
     font-style: italic;
     line-height: 1.6;
     margin-bottom: 1.5rem;
@@ -70,4 +77,10 @@
 .testimonial-stars {
     font-size: 0.9rem;
     letter-spacing: 2px;
+}
+
+@media (max-width: 768px) {
+    .testimonials .section-header h2 {
+        font-size: 1.8rem !important;
+    }
 }

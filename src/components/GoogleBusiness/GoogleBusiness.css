@@ -115,4 +115,9 @@
         max-width: 50%;
         /* Mantener el tamaño reducido en móvil */
     }
+
+    .gb-title {
+        font-size: 1.8rem;
+        /* Reducido para móvil */
+    }
 }

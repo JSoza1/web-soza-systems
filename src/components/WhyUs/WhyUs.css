@@ -63,3 +63,9 @@
     z-index: 0;
     pointer-events: none;
 }
+
+@media (max-width: 768px) {
+    .why-us .section-header h2 {
+        font-size: 1.8rem !important;
+    }
+}

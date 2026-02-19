@@ -22,7 +22,7 @@ const GoogleBusiness = () => {
                     </div>
 
                     <p className="gb-description">
-                        Configuramos tu perfil de Google Business para conectar con clientes locales. Lo dejamos todo listo para que tú solo realices la verificación final.
+                        En el caso de disponer de un local fisico, configuramos tu perfil de Google Business para conectar con clientes locales. Lo dejamos todo listo para que tú solo realices la verificación final.
                     </p>
 
                     <ul className="gb-features">

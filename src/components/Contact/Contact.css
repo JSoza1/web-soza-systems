@@ -78,3 +78,9 @@
 .contact-card--email .contact-link {
     color: #00E0FF;
 }
+
+@media (max-width: 768px) {
+    .contact .section-header h2 {
+        font-size: 1.8rem !important;
+    }
+}

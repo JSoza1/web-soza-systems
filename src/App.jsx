@@ -2,6 +2,7 @@ import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
 import WhyUs from './components/WhyUs/WhyUs';
 import Pricing from './components/Pricing/Pricing';
+import TrustedClients from './components/TrustedClients/TrustedClients';
 import GoogleBusiness from './components/GoogleBusiness/GoogleBusiness';
 import Testimonials from './components/Testimonials/Testimonials';
 import Contact from './components/Contact/Contact';
@@ -22,6 +23,7 @@ function App() {
                 <Hero />
                 <WhyUs />
                 <Pricing packages={packagesData} />
+                <TrustedClients />
                 <GoogleBusiness />
                 <Testimonials />
                 <Contact info={contactInfo} />
