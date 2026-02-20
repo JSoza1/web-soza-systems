@@ -2,8 +2,8 @@ export const packagesData = [
     {
         id: 1,
         name: "Landing Page",
-        description: "Ideal para emprendedores y pequeños negocios que quieren presencia digital rápida.",
-        price: "150.000",
+        description: "Ideal para comenzar a tener presencia digital rápida y económica.",
+        price: "50.000",
         features: [
             "Landing Page (1 sola página)",
             "Diseño Responsivo (Móvil/PC)",
@@ -20,7 +20,7 @@ export const packagesData = [
         id: 2,
         name: "Sitio Web",
         description: "La opción más popular para profesionales que quieren destacar y vender más.",
-        price: "300.000",
+        price: "150.000",
         features: [
             "Sitio Web de 3 Paginas EJ: (Inicio, Servicios, Contacto)",
             "Diseño Responsivo (Móvil/PC)",
