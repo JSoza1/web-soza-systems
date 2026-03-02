@@ -35,6 +35,10 @@ const Pricing = ({ packages }) => {
                         </div>
                     ))}
                 </div>
+
+                <p className="pricing__footer-note">
+                    * Revisiones adicionales tienen recargo de 10.000 ARS
+                </p>
             </div>
         </section>
     );

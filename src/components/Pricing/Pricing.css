@@ -120,6 +120,15 @@
     margin-top: auto;
 }
 
+.pricing__footer-note {
+    margin-top: 3rem;
+    text-align: center;
+    color: var(--color-text-muted);
+    font-size: 0.85rem;
+    font-style: italic;
+    opacity: 0.8;
+}
+
 /* Ajuste responsive para la tarjeta destacada */
 @media (max-width: 1024px) {
     .pricing-card--featured {
