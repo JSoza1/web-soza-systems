@@ -63,6 +63,6 @@ export const packagesData = [
 export const contactInfo = {
     // Usamos variables de entorno para proteger datos sensibles
     // Si no existen (ej. en desarrollo), usamos valores por defecto
-    email: import.meta.env.VITE_CONTACT_EMAIL || "hola@sozasystems.com",
-    whatsappLink: import.meta.env.VITE_CONTACT_WHATSAPP_LINK || "https://wa.me/5491112345678"
+    email: import.meta.env.VITE_CONTACT_EMAIL || "hola@correo.com",
+    whatsappLink: import.meta.env.VITE_CONTACT_WHATSAPP_LINK || "https://wa.me/549123456789"
 };
