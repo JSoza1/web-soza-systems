@@ -2,6 +2,7 @@ import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
 import WhyUs from './components/WhyUs/WhyUs';
 import Pricing from './components/Pricing/Pricing';
+import GastronomyModule from './components/GastronomyModule/GastronomyModule';
 import TrustedClients from './components/TrustedClients/TrustedClients';
 import GoogleBusiness from './components/GoogleBusiness/GoogleBusiness';
 import Testimonials from './components/Testimonials/Testimonials';
@@ -23,8 +24,9 @@ function App() {
                 <Hero />
                 <WhyUs />
                 <Pricing packages={packagesData} />
-                <TrustedClients />
+                <GastronomyModule />
                 <GoogleBusiness />
+                <TrustedClients />
                 <Testimonials />
                 <Contact info={contactInfo} />
             </main>

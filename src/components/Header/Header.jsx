@@ -22,6 +22,7 @@ const Header = () => {
                     <ul className="header__list">
                         <li><a href="#hero" onClick={closeMenu}>Inicio</a></li>
                         <li><a href="#pricing" onClick={closeMenu}>Paquetes</a></li>
+                        <li><a href="#bonus" onClick={closeMenu}>Bonus</a></li>
                         <li><a href="#clients" onClick={closeMenu}>Clientes</a></li>
                         <li><a href="#contact" onClick={closeMenu}>Contacto</a></li>
                     </ul>

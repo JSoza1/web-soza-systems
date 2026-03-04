@@ -1,0 +1,162 @@
+.gastronomy-module {
+    padding: 6rem 0;
+    position: relative;
+    overflow: hidden;
+    /* Soft glowing background with a hint of purple/pink to distinguish it */
+    background: linear-gradient(180deg, var(--color-bg) 0%, rgba(188, 19, 254, 0.05) 50%, var(--color-bg) 100%);
+}
+
+.gastronomy-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.gm-content {
+    flex: 1;
+}
+
+.gm-image-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gm-mockup {
+    width: 250px;
+    height: 250px;
+    background: rgba(188, 19, 254, 0.05);
+    border: 2px solid var(--color-neon-secondary);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 30px rgba(188, 19, 254, 0.2);
+    animation: float 6s ease-in-out infinite;
+    position: relative;
+}
+
+/* Let's add a nice glow behind the QR mockup */
+.gm-mockup::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(188, 19, 254, 0.3) 0%, transparent 70%);
+    z-index: -1;
+    filter: blur(20px);
+}
+
+.qr-container {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s;
+}
+
+.qr-container:hover {
+    transform: scale(1.05);
+}
+
+.gm-label {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: rgba(188, 19, 254, 0.1);
+    border: 1px solid var(--color-neon-secondary);
+    color: var(--color-neon-secondary);
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.gm-title {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.gm-description {
+    color: var(--color-text-muted);
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+.gm-features {
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+.gm-features li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.75rem;
+    color: var(--color-text-main);
+    font-size: 1.05rem;
+}
+
+.gm-icon {
+    /* Using the secondary neon color to keep it distinctive */
+    color: var(--color-neon-secondary);
+    margin-right: 0.75rem;
+    font-size: 1.2rem;
+}
+
+/* Control de visibilidad por defecto (Desktop) */
+.mobile-only {
+    display: none !important;
+}
+
+.desktop-only {
+    display: flex !important;
+}
+
+@media (max-width: 968px) {
+    .gastronomy-container {
+        flex-direction: column;
+        /* Cambiamos a column para que respete el flujo del HTML (titulo -> imagen -> descripción) */
+        text-align: center;
+        gap: 3rem;
+    }
+
+    .gm-features li {
+        justify-content: flex-start;
+        text-align: left;
+        align-items: flex-start;
+        margin-bottom: 1rem;
+    }
+
+    .gm-icon {
+        margin-top: 0.1rem;
+    }
+
+    .gm-title {
+        font-size: 1.8rem;
+    }
+
+    /* En móvil ocultamos la imagen de escritorio y mostramos la móvil */
+    .desktop-only {
+        display: none !important;
+    }
+
+    .mobile-only {
+        display: flex !important;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        justify-content: center;
+    }
+}

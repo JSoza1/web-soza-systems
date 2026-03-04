@@ -2,7 +2,7 @@ export const packagesData = [
     {
         id: 1,
         name: "Landing Page",
-        description: "Ideal para comenzar a tener presencia digital rápida y económica.",
+        description: "Web de una sola página para tener presencia digital rápida y sin costos mensuales.",
         price: "50.000",
         features: [
             "Landing Page (1 sola página)",
@@ -13,7 +13,7 @@ export const packagesData = [
             "Subdominio gratuito",
             "Sin costo de mantenimiento",
             "Sin costo de renovación anual",
-            "Maximo 3 revisiones antes de entrega final*",
+            "Maximo 3 revisiones antes de entrega final**",
             "Entrega en 72hs"
         ],
         highlight: false
@@ -21,39 +21,58 @@ export const packagesData = [
     {
         id: 2,
         name: "Sitio Web",
-        description: "La opción más popular para profesionales que quieren destacar y vender más.",
-        price: "150.000",
+        description: "Sitio web con varias secciones para detallar tus servicios, sin costos mensuales.",
+        price: "100.000",
         features: [
             "Sitio Web de 3 Paginas EJ: (Inicio, Servicios, Contacto)",
             "Diseño Responsivo (Móvil/PC)",
             "Botón de WhatsApp",
             "Enlace a Redes Sociales",
-            "Optimización SEO",
             "Hosting gratis",
-            "Dominio profesional",
+            "Subdominio gratuito",
             "Sin costo de mantenimiento",
-            "Maximo 4 revisiones antes de entrega final*",
+            "Sin costo de renovación anual",
+            "Maximo 5 revisiones antes de entrega final**",
             "Entrega en 5 días"
         ],
         highlight: true // Este será el paquete destacado visualmente
     },
     {
         id: 3,
-        name: "E-commerce",
-        description: "Tu tienda online abierta 24/7. Transforma visitantes en clientes con una experiencia de compra fluida, segura y diseñada para maximizar tus ventas.",
-        price: "Consultar",
+        name: "Sitio Web",
+        description: "Sitio web con varias secciones, dominio profesional y optimización SEO para Google.",
+        price: "150.000*",
         features: [
-            "Tienda Online con Carrito de Compras",
-            "Pasarela de Pagos (Mercado Pago / Stripe)",
-            "Panel de Administración de Inventario",
-            "Gestión de Pedidos y Clientes",
+            "Sitio Web de 3 Paginas EJ: (Inicio, Servicios, Contacto)",
             "Diseño Responsivo (Móvil/PC)",
             "Botón de WhatsApp",
             "Enlace a Redes Sociales",
+            "Hosting gratis",
+            "Dominio profesional*",
             "Optimización SEO",
+            "Sin costo de mantenimiento",
+            "Maximo 6 revisiones antes de entrega final**",
+            "Entrega en 7 días"
+        ],
+        highlight: false
+    },
+    {
+        id: 4,
+        name: "E-commerce",
+        description: "Negocio digital con carrito de compras, pagos integrados y panel de administración.",
+        price: "Consultar",
+        features: [
+            "Sitio Web de 3 Paginas EJ: (Inicio, Tienda, Contacto)",
+            "Carrito de Compras",
+            "Pasarela de Pagos (Mercado Pago)",
+            "Panel de Administración de Inventario",
+            "Diseño Responsivo (Móvil/PC)",
+            "Botón de WhatsApp",
+            "Enlace a Redes Sociales",
             "Hosting privado",
-            "Dominio profesional",
-            "Maximo 6 revisiones antes de entrega final*",
+            "Dominio profesional*",
+            "Optimización SEO",
+            "Maximo 7 revisiones antes de entrega final**",
             "Entrega dependiendo de la complejidad"
         ],
         highlight: false

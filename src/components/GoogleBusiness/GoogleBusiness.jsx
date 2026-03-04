@@ -6,7 +6,7 @@ const GoogleBusiness = () => {
         <section className="google-business fade-in-section">
             <div className="google-business-container">
                 <div className="gb-content">
-                    <span className="gb-label">Bonus Exclusivo - Incluido en Todos los Paquetes</span>
+                    <span className="gb-label">Bonus - Incluido en Todos los Paquetes</span>
                     <h2 className="gb-title">
                         Potencia tu Presencia <br />
                         <span className="text-gradient">Local en Google</span>

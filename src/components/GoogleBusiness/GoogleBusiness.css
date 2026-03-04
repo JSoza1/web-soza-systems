@@ -96,7 +96,14 @@
     }
 
     .gb-features li {
-        justify-content: center;
+        justify-content: flex-start;
+        text-align: left;
+        align-items: flex-start;
+        margin-bottom: 1rem;
+    }
+
+    .gb-icon {
+        margin-top: 0.1rem;
     }
 
     /* En móvil ocultamos la imagen de escritorio y mostramos la móvil */

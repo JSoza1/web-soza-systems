@@ -36,9 +36,10 @@ const Pricing = ({ packages }) => {
                     ))}
                 </div>
 
-                <p className="pricing__footer-note">
-                    * Revisiones adicionales tienen recargo de 10.000 ARS
-                </p>
+                <div className="pricing__footer-note">
+                    <p>* Dominio se paga aparte, aprox 10-15 usd adicional</p>
+                    <p>** Revisiones adicionales tienen recargo de 10.000 ARS</p>
+                </div>
             </div>
         </section>
     );
